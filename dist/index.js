@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const fs = require('fs');
 const axios = require('axios').default;
 
-(() => {
+(async () => {
   try {
     const api = 'https://api.github.com';
     const owner = core.getInput('owner');
