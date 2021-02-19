@@ -17,7 +17,7 @@ async function run() {
     if (tag == 'latest') {
       url = api + '/repos/' + owner + '/' + repo + '/releases/latest';
     } else {
-      url = api + '/repos/' + owner + '/' + repo + '/releases/tags/' + tag;
+      url = api + '/repos/' + owner + '/' + repo + '/releases/tags/' + encodeURIComponent(tag);
     }
 
     let headers = {
