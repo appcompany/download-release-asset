@@ -1,25 +1,13 @@
 {
   "name": "download-release-asset",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/i3h/download-release-asset.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/i3h/download-release-asset/issues"
-  },
-  "homepage": "https://github.com/i3h/download-release-asset#readme",
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1",
     "axios": "^0.19.2"
   },
   "resolutions": {

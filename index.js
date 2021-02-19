@@ -1,9 +1,8 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
 const fs = require('fs');
 const axios = require('axios').default;
 
-async function run() {
+(() => {
   try {
     const api = 'https://api.github.com';
     const owner = core.getInput('owner');
@@ -70,6 +69,4 @@ async function run() {
   } catch (error) {
     core.setFailed(error.message);
   }
-}
-
-module.exports = run;
+})()
